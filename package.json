@@ -9,17 +9,31 @@
   },
   "meteor": {
     "mainModule": {
+      "client": "./client/main.js",
+      "server": "./server/main.js"
+    },
+    "nodeModules": {
+      "recompile": {
+        "slate": "legacy",
+        "slate-react": "legacy"
+      }
+    }
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "core-js": "^3.7.0",
+    "meteor-node-stubs": "^1.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "regenerator-runtime": "^0.13.7",
+    "slate": "^0.59.0",
+    "slate-react": "^0.59.0"
+  },
+  "meteor": {
+    "mainModule": {
       "client": "client/main.jsx",
       "server": "server/main.js"
     },
     "testModule": "tests/main.js"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.11.2",
-    "meteor-node-stubs": "^1.0.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "slate": "^0.59.0",
-    "slate-react": "^0.59.0"
   }
 }
